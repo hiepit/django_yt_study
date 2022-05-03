@@ -2,7 +2,12 @@
 
 <h1>HOME</h1>
 {% for room in rooms %}
-
+<span>@{{room.host.username}}</span>
 <h3> <a href="{% url 'room' room.id %}">{{room.id}} -- {{room.name}}</a> </h3>
-
+<small>{{room.topic.name}}</small>
+<hr>
 {% endfor %} {% endblock %}
+
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ratione minima, culpa voluptates ad eius explicabo consequatur veniam tenetur neque alias? Dolore maxime nesciunt error ipsam accusantium. Soluta, animi repellat.
+Molestiae a reiciendis ipsa tempora officia, fugiat iste, sapiente asperiores eligendi eos accusantium necessitatibus obcaecati! Doloremque sed quas delectus debitis perspiciatis sapiente illum magni? Fugiat eius consectetur officia ipsam vel.
